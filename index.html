@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="光禾生活坊：成衣、機能服飾、禮贈品製作。給小品牌的製造流程、避坑指南與成本試算，最低 20 件起做，歡迎預約諮詢。">
+<meta name="description" content="光禾生活坊：成衣、機能服飾、禮贈品製作。團體服現成版印製 20 件起，品牌客製開版每色 50–80 件，歡迎預約諮詢。">
 <meta property="og:title" content="小品牌製造指南｜光禾生活坊">
-<meta property="og:description" content="光禾生活坊：成衣、機能服飾、禮贈品製作。給小品牌的製造流程、避坑指南與成本試算，最低 20 件起做，歡迎預約諮詢。">
+<meta property="og:description" content="光禾生活坊：成衣、機能服飾、禮贈品製作。團體服現成版印製 20 件起，品牌客製開版每色 50–80 件，歡迎預約諮詢。">
 <meta property="og:type" content="website">
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>小品牌製造指南｜光禾生活坊</title>
@@ -173,7 +173,19 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;paddin
 .tile:hover{transform:translateY(-2px)}
 @media (prefers-reduced-motion:reduce){.poster::before,.poster::after{animation:none}.view.enter *,.view.enter .poster{animation:none!important}.card,.tile{transition:none}}
 
+
+.paths{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-width:660px}
+.path{display:grid;gap:3px;padding:16px 18px;background:color-mix(in srgb,var(--white) 74%,transparent);border:1.5px solid var(--ink);color:var(--ink);text-decoration:none;min-width:0;transition:background .4s ease,color .4s ease,transform .4s ease}
+.path strong{font-size:1.2rem;font-weight:900}
+.path em{font-style:normal;font-weight:700;font-size:.9rem}
+.path span:last-child{font-size:.86rem;color:var(--muted)}
+.path .caps{color:var(--blue)}
+.path:hover{background:var(--ink);color:var(--white);transform:translateY(-2px)}
+.path:hover span:last-child,.path:hover .caps{color:inherit}
+.stats.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.lead a,.note a{color:inherit;font-weight:700}
 @media (max-width:760px){
+  .paths,.stats.three{grid-template-columns:minmax(0,1fr)}
   .grid2,.services{grid-template-columns:minmax(0,1fr)}
   .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
   .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -189,7 +201,7 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;paddin
 <header class="top"><div class="wrap">
   <a class="brand" href="#home"><img class="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKgAAACnCAYAAACFHRdhAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAeGVYSWZNTQAqAAAACAAEARoABQAAAAEAAAA+ARsABQAAAAEAAABGASgAAwAAAAEAAgAAh2kABAAAAAEAAABOAAAAAAAAASwAAAABAAABLAAAAAEAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAqKADAAQAAAABAAAApwAAAACmsM4bAAAACXBIWXMAAC4jAAAuIwF4pT92AAACnmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNi4wLjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgICAgICAgICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iPgogICAgICAgICA8dGlmZjpYUmVzb2x1dGlvbj4zMDA8L3RpZmY6WFJlc29sdXRpb24+CiAgICAgICAgIDx0aWZmOllSZXNvbHV0aW9uPjMwMDwvdGlmZjpZUmVzb2x1dGlvbj4KICAgICAgICAgPHRpZmY6UmVzb2x1dGlvblVuaXQ+MjwvdGlmZjpSZXNvbHV0aW9uVW5pdD4KICAgICAgICAgPGV4aWY6UGl4ZWxZRGltZW5zaW9uPjIwMDA8L2V4aWY6UGl4ZWxZRGltZW5zaW9uPgogICAgICAgICA8ZXhpZjpQaXhlbFhEaW1lbnNpb24+MjAxMDwvZXhpZjpQaXhlbFhEaW1lbnNpb24+CiAgICAgICAgIDxleGlmOkNvbG9yU3BhY2U+MTwvZXhpZjpDb2xvclNwYWNlPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgPC9yZGY6UkRGPgo8L3g6eG1wbWV0YT4K91YtngAAOBpJREFUeAHtnQecFOX5x7fvXuGOOzpIORCx9x4UsZFgiRULvWlsJGIsmCgkxphEJUYFxAIHCiaYv9glCYomFlCBRAULIE3kaNfLlrvd//eZ21lm5nb3dq/u3c18bm/aO++87/P+3qe9z/uO1WJuEQrMmjXLxont1FNPte/cudPOsXP37t0VXK+OJIp9YF21apV9/fr1zpycHLfNZsuz2+1H1QSDN1us1jNCoZDFEgrttNtsz3C802q1FlRXV8tvv9/vL+7WrVtNQUFBsLCwsGbmzJk13OcBc7N2ZBKEAek48sgj7aWlpWmAoq/L5RoCgI612Gzdq/3+d4qLi1+bPn16VSw6kYc876yoqelh8/tPs9ntw4PBoADyULvDkc6xJVhTozxutdksDqfTEuJajVwLhSp55wH2u0iw2Wq3b3DYbBt8Pt8mnttVUlJSnZGRUU0nqeE9wVhlaM/XOxpArTS0vX///g4Akg4YBwOKUwDQGRDiWFhWnsfjcVVVVW3g/M7x48evjNH41mXLljm5lwkHPDtQU3OlJRg8l7x6wzUV8IUBGOPx8GWrFeZqpS/YlJ8ck58AuBhOuyVkta6jTKurQ6G13tLSLenp6QLYwKhRo2oRHz/3dnG3QwBU5XLl5eVd3W73KXCn8+FwQ2FJhzkcDrcQQTgd4PIFqqvzszIz77n88suLo7Sw9fHHH3elpaX1Jp+rAc9oEHasgDIMrCiPNOASQJU85RfmwOWAdwPv+zc6yLuUfR0doLQjgLXdAhQOZ6+oqHDSwLlwyqE06sU08DkAqi+gjHA5q+iGtVzMi774wMTx4x8CUlzUb+TnKioq6puemTkekTwebtlPRHcNHK/ZNw1g0VctNqv1WwD7DuV4g3qtQRUoR3cNtEc1oN0BdP78+U44nAuOdjJAvBLwXcRvoIjRaFwuLGJ9gG3GhAkT/mwE29VXX20fMWJEttPpnIx+eSu/fpKPqlca07fEOWWwSCcTsKIKfAFgX0VvfZVybURf9QPUFug1LVFTeEfLvKbZ36KIXndOTm5aKDQSQI6Bs/wIg8QZD0xSedIEqgOB3wLO3xlLGQb7aRg3f+D3I9ErWxOYxvLJOYaYogrAycupz7t0uOdL4a57N20S74M/2jNt6VqbBiggtObn57vhJoeEbLZrUdjGAqTDpAEEmIjAmG0hFXe6XEG/z7d4+/btk2lMnZWMrunu3LnzxDA4swNwq5TeUAPoj4rqgtqyDomxAK66vFOnTvsxqlK88LEp21YBqnBMjIQBNMoErN1xgLR3PG6pJYFUWsQkAP8M4I2YMmVKofa+gDM7O3sGae4P0glSjWtqyxrtWLiqqDSU+1sq+RxAXUp99rZFoLY5gIqxEggEegGuKYBnMo3Ri3PFtxitsaJdC+udRYjFkRMnTlytTQMndeXl5c0g31lY9HG5sPa5VDyWTqh4AmpqNgPUObjQlmDoFd94442BVCxvtDK1GYACHEfXrl2zM7Kyxtqt1mkAKC9RYBoriWiv8QcCM7DYHzYQxbpw4cIp6KVPoW/atCpCbGXBkEMKnqpApUN+jlH1MJ6N5a+//rr3pZdeSnl/qrHtUo68omdCSE+lz3cB1uqvEF2nJmqsqJUTcIm9BOfE5x2qxih6v3v37leOHDnSp63w8uXLO5eUls6lEY/gHT3pBJ3gQA46ghPnuQyDKltbBSv1CVcgtALa/B6V6FMkiDdcrZTcqW2YkoUTK5qCDcJtNIP9aHyPdsBVb1nVSmHgBNFN/TREEcD8FE6yCpR9in/0S8RciTEj6QxsIdSINADao8LnO8pptQ7FKzCMe8eSl6gXTsm/rYJU6owEEf20gjrMw7B8bOvWrXuQUCnpmlLb0thWrXouQHn66afBZdpoOOZ9ALOv+Py0IjdWAaVCADEElr3okF/x/FKs2lfHjh27OdYz9V1/66233Pv37z8d+I6Bk/4UoHamo0jnabtAxepnAEMGGr5Ezt+H22NFKnLTlAOo6Jq9e/ceCDgfABCjAGtCvke1Ig6XKwB3EKPgccbUX4zGKesDZLz7S5cuPba6puYOynUV3DaNd7XpsCMR+3RgUX3mU58HGcIVaz9ldFO1XeO1SYvdw0DxwJ0uBZh/hAMOwEeZ0LuVStQOB1ZB6PyK8vIHb7rpJokQqnejQ9h69eoloXXKRqhckNGjoIh69Vq0/cLFi69AXfg95TwUbmqPmzhaBql0TeWmgcB6VJg78J1+mCouqZQAKKCyzps3rzN+zXsRz7+gsR2InoSaUCogIp1n9qM33j1pwoSFCT0YTrRgwYIT3enppwUDgSAdowxusg/O+wNO+u/RVX048atj6WcLliwZ6AgGnwKkw/GnOto0SKGHhAIieUqJSfhtusczF5DGDDNMhsaNSdvqAJWgDnxzgxHpj9udzgsS1TWl0lJ4DCE53AXLmzhx7Nh/yYlhE9eRW64ZdSyA5+mfl/ceYWynKS4rYC7OftxYJYBtG16Dj+DobxJI/CFpKqL5Dxdi+VuKi/MxPC5u85wUGgk96XCWYHX1C9DibgK3C6CTbpTNQN9mPW1VgIqVDgCG07hzbQ7HoECCIl2liIyWIIr3owdey1j6O+p1dR8eSz8EI+tGv9e7ZvLkycvVe7JftGjRT+C+b9IQejrUqgtKQwlwAexncPmnOF5Gg8kYt67BxD1VWlb2Mg17DiCNrxtoC5DCxy63W4ZNP6ny+2/avWPH57GkSHNXIeLba+4XGfOX4US45ji3x7MMlCUNToV7Wq2BmlBoejRwiqsIridj6auwvH8JkL8xlMGKSB8HyPXglERwUlExRAfmWQvj/CcD8mcxwJYPHDjwRBor7FCszVFiR0k3FaDvBPCG17TNU6k7tDk13el8dcCAASPCLr8Wr0yrAFSMoeycnLsA5nz0nexE9U2VOoIouG6Ioc6FE8eNe169ru4hZtdKr3cuFJ4PV+sPcP67Y8eOb9X7skf37AqozlWGM7U3ohzXwEXhjMJRzwPwbxCRf6kRpHSSLbzvXjpCTV3ER8m0DVySABk68SFY+n9lmHS8DDO3dLFbHKAAoxs983FGa34LOO2I56TrLHoSgPnOV1U1y/jwCy+8cIgnI2OJiyASAZVs6JIfRhFRZwK47sIhE92UBrNYetBgiwHpVaI/a5/dtmXL33jnvxRjQ3ujDR8L86CdMpEM8yorK39F589uyeq0KECpXC90TTGGpjY0EEPhnk5nqDoYnI/RsltLLAAjc4QeddrtFxLBo9xCd5T9Wm06OYbT/Qj913i53nOF21utGYj8x5hQd4z2AekEVofjSca62w0XlfpJJwakDjrm/Z709PuRgJ219W7O4xYDKG6kPlRuDmPi1wonEj2vQRsGDJb+fqvH81ft8+KqYs7RBLjXKBWcAmaCQmS48yttWo5lttqJMt+nIZuAFA7dAzVjplE3qygtfZ/7m9uLLqrSR0DKAIVE8E9HAj7YUiBtEYA+99xzvdMyMp4EKJcn6nxXCWPcC9cDjB9Ouu66ndp7c/Pze8DVfoleevAyYGasuQy/po7TEslD4H0or6EAlRf46GQ01E9QE044+EKL5ZZbbinnxr+5rr3cPo6hrUg+mMDNLQXSZgfo4sWLu2P9/gXOeVljwSmtDGFE5Pzb2OLpFstIuFp/RQSHbyLG5YFiOK5uhmZBSUku97o2BqAiAaiTG5XlImNZAP9nyruNN9rDOfVGKqkgnYXOn9Wc1WpWgM6dOzeHxnoErndVU4BTRDY6prh9NtQhis12ofGagISRoXLerxszZaKSKPppxvTJnlM3GSw4yfgcRN2GD9F4uf2ch0GKTvpzQsXumTNnTmZzVa7ZAIpY74RYn4k4GNsU4FQIAOBo+KDLbt+jJQjGiQ2wHGbkiAJQBL7vhhtu0I2b4nD38HzyFpL2pRzL+wBoF8NlMcDK2jVApcKAVBH3dvvdjN3fOHv27EZ3eCMd5bxZAKoU1ma7zWG3/1zEQRNvMNFqHUdkLSUnnDJdOJpx41qdOhJm1jDryJg557yxTgWDNlujwR/lVal3CXqj89tw+/2OIJurjAZjUxS4TuM1NlMpZJcuXa5kDPN+XBMNt9ajFETgB3fCkLTpeivWu0TLlwnH1G5hwKY98cQTOgcznE9W6mh0JLmiD1ssW7XvlOOg39+1XRpJxopyLtY9IPUg7v9sd7vPFmkWJVmDLzVpZgDCyvDi6TT+bMDklsI36UaPBRR25HVPbb4Sv8ibvhbAaDcBKE76bMqUob1OOpnFWWIEtDZNfcfhrsBAi/V9Y1qMpyEdBaBSdxlsgYt2cdpscxnAUKZ9G2nS0HN9izY0l/Bz+MbyGBufg7unW0NGiBJ5vbiZCK7TOcjlOSqyAvaqc5CLy4mOkoNI76HNmxiAYu5tNQJam6a+Y+ooo1k/sALeP7VphYPAoWuXW9TeaOfHMmqHvXEYQP3Lk4sW1dHLG1r9JgOojOLgnP4j3OMYdYixoYWK95xwRbjlObIkjTYdnGwF0VDf6hzkpAXQbu4N0aYVjouFs7qhXE64J6NVEqjy9NSpU7/X5p2Xl9eLTnFGImP82ufaw7EYwwxeXJjO5EaJt2iKOjUJQEXvRA+8rancSfEqJg1P+NvpF1155QBtOpZKPID76SF0IVlzM3JLQMiw6JmRCwcP3sDYChxMefBGvCNJzzuCGH9r3E7nE8a0dJ4r6KTdmly9Mb4oRc8lnpeJhrfSBpcbmUhDitwUALXSIGfRaDNkKKy5N2l4RElOqKpqrFEhz/B4lsJFF7pdrioBqYBJ3D08c56E92nLlpmZ+TFqyHrKrb0c9zgMzho45FfkefPo0aOLtA/QUbvifrlRVIsOu4laZbU6EfV/uuiiiw5vLB0aDVBEew/E6iP8OrUU15COwPumDBgwIE9LABHdTNO4x+v3v8ioUhk6qQJQuOhRTCc50ZC2KhAMPgEh/QK8eJvclx8dw4t+uZ7wO4LzJ36hfUakCBPObkTfPUo7mqVN01GOpf7Q6hDq+1BjnfiNAijgdBGCdTeNckJz6p3GhhUDDK7dh556H8BglPPgpoyF9+t3C8742Zj8e+CQftK6AekEyqvTW/v07PkS6VZBzJARpCooZU9nqEa3KgSc/wfxrwGcnx58o8UinBxwnoHR9cuOqHtqaaEeiz4KXS9BUk020l1Nk8i+UQCFW50LB7pJAidaepN3MhAwBmBMNCrkE4cP96KTzoJ9jgbMYmXvo5xXsNCrzgUiK4tAgBmoAbu4r3BJFZiAPwS4vRD5AAL7I5b5nlZVWTlx0qRJ32nrKq61vn37DqYzPIll37mlpIi2DKl6rPjBMZiILju6oWU0Mo6E80Gn65aVlbWC2M4TW5J7agsooMLPWUr43lTA93q0jx2EF124ELBdA6g/37Ft2yNwPGyZgxtLOI6CS0q0lXDjagjrD9XU7AOk63jHa4yj/mPMmDGlB5+oPRLOQCcdSN7P8PwwJYzQmKiDn8vcJuaDvY6KdU1DZok2CKBKw1RV/Ro9b5YyC7MVGwFgCOcrxjiZhrh+hYlxZbGK88wzz/TYtWvXPiNAJT1c+GrE+FA62zZE9UZ+GwClzoWkzVe4NiL/aED9BJ30dBOcWuroj6FRCJE/AenzPMZrUhZkgwDKbMhjMUBW8abcVBBpYZB6Kc8fi7zeeWnBYGG0KcJ6sjXsTFwnl112WZbX6x0JoB/g3XkmOOPTEgkjo02bUJGGJ7qghppj0gCFe7rKKyoWM4nqGjVyXc2sNfci7hXHezD4Tzjbw/TatSyhUzZ8+HBdJFNDywjXdbACSYYnK2ugJRC4FQ47hg7h6ugWe6L0xFaQWbIPMex8nzJQkuCDSQOUSW8j4Byv4epxSchVqm2UTaYMl1GxZRg/L2DEbED0V6xcudLX0PUwRaXBW3E8oL+G/EYTpNxbUW1SsP6p1h5qecJGaCHSZhgrWn+pXq9vnxRAaag0GuotIuTPSWmxhv8T15eMlcuHBd5D73kLQqzx2u27iMnzM9ktQE+Wj2IFWdUkxJcxQnDImJxWfHmkfYCJ9mMAew75tu21mOpDRTPdFy7q83oX0bmnJqqCJQXQ57B2XcyRZogwqeeaqb71ZwtQ8YHC6JWFGAqx+L8WjgpgN/Pwbhz1JUTg4LBzVFSVlX1NTGMp4ieqz4zvcDpYVeRSOMGdiPdj6KBKhFTqyZD6ydJqKWgP2qCS8cZzJ40btyaRciQMNOYWZaDbrRSLFQ6SSN4plUbVUQFXLWBx9ovDn3OJJZXY0H9Qr+cR4x/v93jKpsdYOEs8AS6P5y4IPQ56iJFoM0GaeFMLF/X6fMsYkh6TCBdNGKDPLlgwxeN2P42IS/iZxIvdiinp1bIBTBmzZ8JTaB2ny9FfVyDWt8JR66zELOnpsCPwk04nevo0dN5s4dImUIUy9WzQG5p5ofUlcb6FGskkIbChe2ZXVFb+i0Y8BfEeebjdHQjx8KsK2IiYWksU1GLG3f+BM37btGnTdNNMpO7PLlnS38Vitow2XUF0Ux9C+EyQJgAKsQ/QRZcTAXddNLpqs0hoqJOMLmBY8cSWiFbSFq7Fj2t1VUX0M9R0EsSZjUh6FN10hIh2Y3mmjB69HU57F+D8E4DejL5QZ0zf+Ix5ziSu2mCSC5gadFx99KiXg8qICWPMy+GeP05py72+mjbkPhxVjCxEuIzlPws3XYwFuiWa7rRg0aKriESZxQDGkYiv5IZLGlK2Nv6McFH8ok+hRt0azy+aCAc9HhSfje7ZxknSgOLDUZVOabV24+kZiPK/QNDhdNo6axNNGj/+7zVW6x0YXBvCPr8GvLDjPCLSGHXqpwcqKvrGq3VcgOIblPtj4J7pKGbx8mnX98TalxEjgHchwcjPYPmPZbi3j7HSuE7+QTpxQ20WkJpbbAooHhS7vVcakfexU9UzL37QoEE9IPQl7V73jEchzb2witMPMf4wnPJuoqAGaW4rh8SKriDdbxij34crynjbPNdQIOz5uPbhhx/WzbrVJJHJkLE3DIALYMP9BO3mVksBaCKWupuOexuc8iGMpyOMtGGx3KXM9nyOIVGfCVEjdQ6eK2LeZju+W7duJx28qj+KCVCZwkBDjIJT6J8wz5TFCoS4APBqgmb+YOSkqEYsLmJ7BHG/RiJ5zC0GBcSd53TKMi9XkyIq0GIClLHq/hD5TFO8xyauiHxE+aWk+I2sHK1NKbNM0dsf5FqJKeq1lNEfi24PfX68ZMmSOoanpIwJUIbxLkS85+Ay0edonukogA9UpiFfT2e+wThzlE7+DsOnb0i8qrlFp4CoTIws5eG+Oy1aiqgARUQ5WJTg4mgPmNcMFEBMYdlb0Umns8rbqdq74t9j3O1JjIFSU1XSUkZ/jKokPTgq3qICdMiQIb0YGTnFFO96QsY6EyMSV5wsinu3cZptdkbGp9DxHe7HerzDX+ejYTKX/jxZstNIjKgAZcnsMxFL8pkWY3rzPAYFwqL+Ahz5w7RJhIuyNORiuGg7i7LR1rJxx8Q8WBw220BG7Y405hQVoOhT55t6k5FU9Zwj6qGbLPN4o1EXBbSrmLbc7j6sUA9FEr8N7RilI+6m5hzjQ3UAKnGfuJfOFLZrbslRQIIg6NjDs7OzdZxAQvaswaBpLMUhJ0Y54x/WYdg/OkzqTuR5rKk8OEGesF1zS44CohKha2ZCu6uMT4Ycjlfo9Kbj3kiY8LkAlO34fv36ddEmqQNQXEsn80vryGPvWgIle6y4TazWS41fv3CEQv8DuJtM1Sk6RYVu0KY7PVwnfeoAFD57Ghw0ei7m1XopIJ4PXE5DMIp0sY7jxo2rgKrv0/nrzaOjJoA2dlb/PVlbfx0SZXothD1B0GxuDaQACj/WqJPwxBHGHFi/9H3oawY1GwmjnjOsjv0TG6BM5+iKojowrA+oj5n7JCkQFlei8OucnxhK63BHVSClksyxYyRXDHOb7SitF0THQfF/DkS853boBVibAAuyqhuM8kiWA9dNE+HaLnyiO0wxH53IjF7Kx6f6sWRjdzWFDqBwz8NEDzANJJU8DduLNQ8Zc6Cnbm18YkW9XPuGX8MybudPKXSz2TqJF0mtqhGgR5gGkkqaxu0BqBWVqc66mAzpfWPSODZtCbyxYQENVlPoAIpudKgp3lXSNG4vXBIg6hbMlRwh+JbG5dy+n1boFgrVBags7ULvPpSFW9s3BVqodmJoonMeanwd17e367UFjBVO8lzEPCCNzFKIcNAffvihE1ZmN3P8KEmKxkgeJnRX49BdNWvdY+UHTS00OuHCEry3uDwlRQSgrPUpSn22rI5hbo2nAPao+PSy+DSgBJBENhzR5ZwwRdSEaIQomgMBKL9u+8KfS48AlLHiXJQmjwlPDbUacSgAZXMj0p21h7X/g16vrJ7XARcZ0FIhzjEMkikgWVk+nxIbGgEoqwbncsN0McWhXVK3xKfHRDCWztGxSqRUkDth/CaVY4dILISBSaYTtJQlFY4AFLdIZzOQoekwEEZlCNVJB0ZxP+Gs14G26d7a9nMSYgFKJxI9W2oTASg9Oyty0vbr2fo1QMcEhX4+j6MLrMX1JDqpbgi09QubQiVA8rAWmM1WU5MppYoQCl0p01Tcm7ChACjcoPyQQw7RrdgMndOJdnLo2GoTvrY9ZIWM4Yu9dvlmlY6DprWHyqVKHWQuPCDcb1y5LWS35wJQU9eP11DQLmi1KniMSHWc9Dp3SLznzXv1U0AACifYYUyJyOrJBDHjZfNcSwEBaDCo4DFCKUY9IsfatOZxwyhAhxcibzI+zSjSQDio8bJ5rqGAWJDYRIohaVJKQ5imPGSuvKiZG4x5YgAcBjMwXjbPY1AgAlDxz8VIY15OkgLS+RnOLGO/Ufsow3cuXExHwFm1l81jAwWk+9KJlV58EKB84MqQzjxtIAXwdYqBtAka79JmgfNZAnHzTIBqqRLlGGzijlPwGAEo0cxVUZKalxpAARnwAJwfSoCy9nHmKR3LPXNBNi1Roh0LQMN4jAAU0VNuRtJHo1aS1xDvhCxWQ9h/RnnyLLir+eGvKITRXpKpH6hIlXItAlBYaqmpGWnJ1LBjxkAsTD3exlcs1mhzQP9MwzQ9xxTvWqpEOa7t4EGry1UmdyMARSQVmUt9RyFYkpcEoIR8v3399dfv1z7Kx8CGwASOlhmf5habAuJbglEGgj5fqaSKABSLs5A4PFYdUNxPsXMw78SkgGK9B4NllurqZVESjUS8Z4aN0yi3zUtCAcUHarFUIoH0AKV3FxIF7o0g1qRX0hSQ9ejhkB+ykO1a7cOyDA7gvdwEp5YqMY5lECMUKiktLdWLeD53WCw3sO9jPGlejkcB4Z4YmlVwgGcZf9d5RLDez2QVYVO8xyNg+J4MEUPL/e+9955CwwgajzjiiDJ8d+a3fRIgYrQkwj1ZA/QT4j9Xau+Lc57z8RDeY3JQLWWiHwtACRTZ9dJLLynKegSgw4cPl++m75AE5pYkBaTXyzyjYDCf73jqPt/Nai3HA94L5GsW5pYABZDg+EC3qikjAA1f2GKKeJU0ie8lOokgkK/5va19SqZy41aagn7fJTxbUXvbPI5GgdoRzs3qLT1AQ6FvTGe9SpoE9yJxZJ4R35afOnXqHu1TW7ZsOZyRo5+ariUtVeIcQ0toxThHTSQKTAdQdKT1cAHT1RSHhsZbTnRPHPP/YcXF+dp70NLKV9R+CUC7m855LWViH4t6CThL8IJEosB0AGX56q1wggOmHhqbiLo7EFRcc6xm9+iYMWMUv516n88jHgcdLzbX+lcpUv9ecEfH3k5KpsXXbjqA8t3JAwTabkZnUu+b+zgUcDmdlupQ6P9cdvu72mTCPdluwTFv6p5awtRzjCtOjM0NuOkikXU6JCrzZ4LB/0q4mLnFp4DQCMt8Bxbnn2R5b23qBYsXn251OK4wLXctVRI4xkAK2u2falPqACo38EGtMXUmLYmiHCOK4JB8EyH4h61bt+qCkh9/6y03a1z9EuCaCwFHIV3MS9BUsX8sls+0aeoAlJ7/GT2/0hyT15JJfyyinZCwpZWVlX+dNWuWzsGZuXfvFYwjXyirLJtb4hSQIBtUo918DeUr7VN1AFq8d+9WiL/FnHmoJdPBY6fLJaL9Y39V1YM333xz0cE7FgsfQevHTM574KxmUIiWMAkcK3ZPKPRfJJKOpnUAOn36dBlP/lAUVnPTU4DP9Ukw8mYAeA8+z4ivTlLNnz/fiYvkXlxLR5phi3q6JXKGyiRhiu8hkXSiJyoKMfffgcg/SyTjetPwYukdUgD1Z3wG1i7uGll2T9kb76fCuYy1U8aCQDB4V7XP9zF1USZ1qWXDDzoGAF9TEwiYq4aoREl0X6t/+px8psf4SFSAkuhjFNZ9zN/uJsBJdmNqrXykXnmMBguQh7iv9sGZ94PSYon64SafFrPJd5kyUT5yud+DfQ8c21mKhUxgb6pwIikPZT8AKO8sOXBgBVJGt3ziggULzsSHfC+ctbM5pJksWlh/CawQaLPpwL59Ov1TcooK0LS0tAIiwFc77PZL4BgJv1G4DCBTOA0PradB17HGzrfBQOB7jiUg2s8+AChr2AdD1dUwaytqm9VFA6fjU+wFWzoMMXoS+ZxCBxkk4KCzKPkmXJAmTCjvl05FZ7mHkMRXRAXSZv/ss88eSr3/SGcbRH20t8zjBCkg6iSLha288847de46eTwqQMUfisL/OvcvSeQd0ogK5wiFPqMx5bmP+O0kkqcYrlKWk5PjU3ys9WQmoWkw3P8QsvYyefYAvacB5h+zH4pul8G9FgWqAk6LpYwO86sSu33ZtFtukdWRI9vSpUt78IXjP6LCnIbhpJf5kVTmQVwKiO7J8Do4eTNauqgADSdcyYMH4GJdYop5MhfDgcy/xu+3kHQrMBR279ixowhlN2l2Eh5BkFGEIoC5NT8//ysGZ1dwfiIgvQK1YQTlyWwJjqqCk47366JgcOnt48frhjIXLlzYmXnuf6D+P4FOTp1CGo3S5rWoFBDxLsEhMB+dg15NHBOg33333c7+Awb8B5/fZTSEmj6yByiyVDOu/+BfEYJzvH7/V1OmTCmMJGjkAWJf2rxYfnDW7XDVT+DOL9MJxqITXCD6KxVr5FuiP66AE7GOynGftabmhdsnTpRyRLbnnntOPjb1IFz9SnTsNFPvjJAm6QMR77Tjm8TR6hiAmhG6f+wNLnE9fr8XQLcunYATkIih8Bj3noJjboNjxlRWZU4OHFFW1ZBfDs9k0sDSOQIAsQz9c6/f6dy1fePGvfHywZWTztYXhfoS9ONbMaj6B6J0HvJt8KZY66HQPky8e+HUf2fxBR04pQws6/076DKpOhDINsHZYFKLbi/GtBc6njdp0iRRC+tsOuAZ786bN687BtNqgJCn5VYAKoTSMNtXVfUoyN9tfE7OxWkNCM9gPPAUVIDBcNueFCYdzudibwfNNl4ucZREq9X4APABCryJ31qH1foB0UG6IUTtO5YsWZLj57PNdJI7uD6C/JvEPSXqChJhO3nOKCoqenPatGm6Xi1z2xk9mgU4p0LUHBOc2lZJ/hjXHJ9GCHxYVFh4gdH4VHOLC1BAY120aNGjTrf7dr/PpzwjjYjO9Rq/myZPnvyDmpG6BzyDGYm6jmfPg8sdAnhy+GXwc8EtlWmlalp1T1rpTTUAtxKWX4TY3IPb6SPcUa+hanwAV62jY4hjnCHFQYjjKTx7I79MyqRmmfSezMQJ/wXlvHfv3r2rjBalcE6ive6j/gJOM0oJCoskVdpU2jX8E8Ir7RneyzE0jWrcCkCh5a0TJkyYI89F2+ICVB7Iz88/CQ76HtwiUwrB2wt8Xu+lN9xwg06ppSDW559//joeuQkxOQS9tQtcU3GGRgocrQTha0pBwgAWXQFwy9yeXTz7Ae9cOnbs2H/z/jq2CO/sRbofk+4uwH04PTIqMcKvqbvjnUIowPke8L6/rKjoEzhnbW8Mp3711Vc7FRcXz0LnHE/n6dDgBAvyoVzRG0XalEL3/UhKWaSiBKai+LdhLG7OM2jHXNo1lzRdSOORZ8W3LXEKnEs7fV/jdJ456brrdtZtmNor9QJUvt2dmZX1d7fLdTEvEsQ/ysep7pFJdmqmXLfmL158KwbVL3C7DKCAGPX4Q9UESe6lUEpnYE9FZH70TvJ7A6LMQyfcxrlumzNnTia66QmoHtN552Xy3kSc/GFdWl72IpV5aPvmzV/BrSP1kpcgQbpA+AcA8TXVfn/HjFCiE0NbRY2iHXbCeD6mLT6FM25y4DOv8XorIZXYJIrVynVbjd3ucIZC/IWyactedG7BxVG0zXFcO9Tjdqfhhnx827Ztt8ezO+oFqDTSc/n5l+JJf5kXV4L6oePHj/9crqsbXPZSuOZc7vcRl1RDganmp92rQEW0FiLC1wG8RwGpuJ50G/qhncGFgYxijYOAtwC+HDqTLo32RLHULZYqwPdkjd//FEr6Vu7ris4IUV8a5kF6/qW8u8MZRNKBBZjUXQZYPoNbvA3r/A/t/D0dtpBfBa5BIbKOblo6Az6bfG0PRpNBHlkAOxvaH+5wuU4O+HxLwNJ6bXrjcWIAxa0CAFfxcM22rVvP4qURnVAMFp/f/zaFFWd17JIa35zkOaATdhpAMHxHN30WUM1HBxbuqtswzsRTcC5c8S6AdUI0kS96tIgXwP6Q1+tdHs3QY4ToaLfH8yCUPw/xn9GRDCLpvAJOpqvsg4arYDpvQ9PP4HgFDLoUJTLoomsUw8ns2bPTunXr1hlvyIGw79uQ4uBpQgCV5HCTmwDI4EkTJkw/+LgiAi+nwf+Ku8cVsxtpH2jEsVLYWp1xN53hH2Ql0ex1xm/FoMnIyDiK+7fR268HrLU+07C+CTg/hrs+iG/1A+M8dikeEfHD8CQ8wPvEA+HpEOAUbhnWLeF2GxHHK6j7SsTxt5wXGGcNCJ1aYovpqDe+HPa8nEbtY7wONxtBJs0OTnmv0gFq9eBe9Oyr6NmHoiPORkws15YL0FXC5df2GThwJq6DLyj7z11udx/KH4QbLoXws1n7Z6PRGJI8UFeug1vP4JkjEEfEzzZ3t9OWvOWPhVtCSxHj5YBSfJErMAQ/QLR/j3TZDy1j6klh8d2dtD14Lgd6ZUh++I/9gLqkxuHY78KIMk4oTKaWCXNQGsrKciROLUuWawDk3xRwKMZRMu9tdFpF5OOaghBbEdWLEeVzoo1kIapzKd8Z6Dw3keYzlk9ZNHXcuG0UQIc8xY2Unn4L+f4MAOcB/roug0aXOjUyUIxDlVvKJEnCKwHXSur9JSUsMA5OGEvNAM4Arp0D7U9HOg0GB7kAU9yIdojKziqT2wP4wKu4twd/9VaubSDNOs43JQPYhAFqLKScy8oZ27Zv/y/66VGif7b0JoWn4hIPsBcCv0sJHp40duw6YzkkCAVxngdACzGG9hnvh42hGbipLod79ISIevQaH2iL50InB5a41C0YFNfQGlSXd32BwGok4E7ouA9g6pYs11YTbunKy8s7iXQX4T46G49NX9q8Cy6jdDIFg3oohXs/Nqg1wLuq4NIlpChGFfwLEm+BNu94x/pc46WMck+xnCsr11HxY5UAjihpWuKSVIJOwtB56AeI/wii6al4oklbJsB5vt3l+gNBC0dDPLeOrWoTtsXjMCgFPICpFE65Ghq9yfn7cMvv+VXEA6VUGW7ZEwN4JIMvV0HnkwCbBOukAcoIdmLRLJKAfIRr894DqFlnwyRijhIayazNw3gvofOF+fkrqcB5irWc0BPNk0gqIoRiaLYYbvk6Yn9afaKKoI8L0U0XYxx05RkRT21/U0EJIPB0VACotQBRDMpVDNNuwXisYHSuCo4II4y9obqdwN2rMIxHQp/+SKhMaIr7o3ZLllZY7BYv87gyMzNnJuMFSNhIUgtm3AOMzyHCecbrLX0uUfzOWgW9AG7xMYTQjQZFKw89ej2EnuWvrh5PQ5zGMjZWkQRw4WjJU/aaqlOGOWU55V8PKP9lc7ne85aXf5udnS2BwFWIVsWRHqsiSMRspM95cNmrYHdnobdn46vMIDindkQw1oP1XEe6WXBFfkObPJkMOCXbRnNQjJCL4EIyylNPMZvntligolsByh2AbSG+uyUo4z8k4hahIaxPP/10GmP6WXSyYeIZoGHPhaAyPNeqkfz1UUvqLRazlBPOVsTBOhS+dxhQ+Q8DFpuoT+XOnTuFU9ZnHIihewzgvgT6XUTdB5NXJhLRo4IjWW6pKzscnRiLIGUcN2HChKXcSyq7RnPQrKysDxAdX1OxwwGJrmzNdhIWY5I/Fd+CxbiE/TI6yQ6c9xL1XocI6FIeo75Fo0g6GaarfOutt16hQd8hIGQgIL+Qxr6IBjqBQBk3oG19sEpDh0GpqFMy0BAMfoJraBV1X8O97WkeT+XGjRu9CYDS8uKLL/Yln/OQFRdT/1MxNLM5z2A4l/DeWs5Vh4hyI8mNIXILuv2rhYWFL/No0lmqnSTJ1+qSW2n8W+Gij0cLbNalbORJhFsGAsKuZQWKv0HUt+AYuyFAOQ0TVTbDIYYjsu6mst/zzGNwV3GnRN3E8CsrK0tHl00nb+Esw0h4Dr9jUCOy4UxKoISAtjlVARHb8i4BpbwLEJZTh28ox8eYzB9Qtv9B7/2laWlV/T0ebyKik7p1Q9f+EVx3JL+hRHD1wBWUgefCrQIhaQRRoFibtBc02ktw0fkYrV/EShfvulqueGnqvSe6S0Vl5SuA9Bw1LK/ehxJJANeQRlJEOCoElZVAhZXVdvtr/rKyNYColCinyjAnrJMjw555NOptcNbraWjx1WFEBgpI/zfE2EJ0sm/rPKS5ICF9GBUS1CBqQH/cUMfDrU+lcY+nIfP45WIg8gplVbZaICFyyZu/cFOrezVf0qqbPCc/qaN6LM+FPSIlXNuK8vc/uPmn7P9L2bfwrLiCvIhLH/fDL1FzrLt/dtmyXGdVlTK3ixcNhZb9SCXzuzxw30hh6s2obtb1XoEry3DpbbTTvEQ6ULQMIwWMdjOZa3CpY+n1yxD1QxoDUlXhl0YDTTL7UxplNcRdhVW6GrDtRaWoiDYKpJYX11E3omfGgpJJgHIADZ4hoFE2GhWwVQhQQcVruJeWjh49WvdVDjUf7V44K0HMbhR9N5zLHXI4emPS5pHmUHyBh1LufoC3F3uJf+3EdQ9ll5EoBrZrgSjgg+DC5UUX8lGmStKXsJdg7d2U8HuAuIO6yxSXbdTzBxrXS529u3fv9iciuslXicAij1PI70LKchZt0p+OLRJB3EO8onZrDlCqecOsLBhYr1GO6xOxB9TnjPsmA6g0IKL2RHrNIxD97AgnUIFhfLOch7mHiDEaU+EccMl9HH8J8T6i961muGyD1e+Xz5JU3X777V7uxaQrsyy7Ap6rIcp4ynE4x53UBlEfilSYfOAmlejNxbz8AzrActjku/T0Oo78aEUHLLbc3FynvWdPZ+dAwEn5nK7OnR2WyspOdIAMypCJRZzBWlcuFiRwsCgb86xD1SwEgNOgWrhghYWvqQW93opQero3WFZWw3MIB3uA2NPqnj17VifDdeYTF+sJBk+lnueT9xmAsh91TQfcHmiq6JVSD5UOctxcG+8WabeDiKIfM2pXJ1YimfdG2iuZh2KlFZAiDnvSFqNo9Gvovcegh6QLALWbBrxioOzBytsEW/mcrr2OtBtowAIa2EuDiW4ViZzS5qE9FoWfEZGreP4agHkYnCJLbZRYDaJWHPEpKoSP83Ke207nWoW76s0DBw6sNU750L4z1jF1s1Jm21FHHWXt1auXlegfa0FBgfI6QBfCiLEMGzYsuG/fPjkOxdKbY+WvXg/TehC0PhPaDeMFJ0M7oX0a9GtxUKrlEqaD39SPYTSOuWovNbR+an5qO6nnTbJH98ug53ai4QeT4aE0Wm9+neBS8mm7KoBbCAD3QMxdpCko8vvLbFVVPgDp2759u4gyEYNxN9I4iDM8mXyuBGQjGXrr42cyHoqg0htiAdOYqZYAgBOG7aiigaXjbIb7foSV8j5sbd3k6677wfhsS58Dym50IvnekoDyDMp+JDpwNvQUULpVaSHlSrT+TV0H2lB8no+g395n9Jo05F3a9mnI83GfERAdeeSRTqxiBwRUdB8AEISoQRFjWN41pBGLPGF6ypwnVjs5n8b4CaA/BWCKz07Gg5X8E84oSsm1xIDzi7j1IparAMQ+CL6BDrYWPXM95f8GzlgwcuTIegcDorwmoUuA0YWK0h0lfDDvPJ6ynQwQjxYuCQ09IrqhqUtb5sbUPaFC1ZNI0TsDgRW4qkZHC9yp5/Got7X1i5qgtS8KN6ZRDqcxhsIpzwKIJ9JLO9NAGeiPLrV8Td04WsKQdxDVIYAqIgaLj7KUYHTs5N3fAdrN9IytXN+FRNgHqErg6pV8CMCHCK+OIg2seAccvXv3dhZitBDF0gkdJgd9uwf6aR/GvPuSb1/e3w81pS/6XA6AdJO//JjZd9DIkbo3db0lz4Zs0EdcYV8TLXbZ5LFjxR3WJJu2HZokw8ZmIq4dfOP9aOwTaPwzqPQp5DmY6HYPVn0aXEQaSSl3SzVOHSJhYFE+4bDy8TNZawqmzvRpPqhA2Sq4VkrZZHqMLGXpJ7F85EtmBNjhxLIKiXx1LgOVQrwLmdQvgwa2A3oZOBHL3wEYHXBvh9YVJLRtqTrLuxLdxN9JPfejd45isOP9KJ0y0azqpKtD+zopGnFBwBYvqkjEWElJSQ6A7EujDqGBj0fJPppGGyy6FQ0lgHQDUt2IV2s3UiyiKeXCWOe+ADgIJ6UK9CZ0b9ngiOK5sLLnPwmYXMZlcaLGyjIlAalUJvxP6kbHksUXpqJq/S1ee2ufS/Q4JmESzSBOOiuT7S7AIh4F8PbACcpDNBitkkbryUy/rjSMRGL3og27oL8IZ3SJKKPhJHAxUrbWBmScOupuRQqsu1r/SVupX52aYLHLODuq1p3cm9sURpHxHTrOZLzZyPOQ2+FYjb42Cuf2behmajuAVWVash0gonYR7Irww6mre52aWHcxxU/aYpkbTNJad5JIhd+j6szHGR8z2LnB7+DBhnb6hN85j1mW6RbL44jsa2KNMHWohk2YcimcEHAqX9gLBB4rdThmTjN8xKwpS97sAJXCSlQ2ivQcDIErYoG0KStl5tWMFACcuPYszEGb4/N4fnXjqFG6rzs39ZtrtfemztWQH7pJAUr0bVh5fxdfmbm1UQoc5JxP4pv9dXODU6jUIhxUbQ5ZkZiB6Efx643G4sOsNYW7SptU34u1jkEk6yo9Cjh/B9PRLUvZXOVvEQ6qFv76668Xa/7nOKXniQ4j47bmlvoUCIOzGnffLJbcfKClwCmUaRWEoJN2hotOB6AzxBlNxVO/lTpoCSUyCZCUI+1m4IlZFG25oeYkTYtyULUi0gOJrXwEcfELOGqpDJOZW+pRQNZMpX124eecTETWwpYGp1CkVTio2hSMNMly2ucz4jKbAONBpoWvUqb192LMooqtJbL69rIuXT6Z1oyBMfFq2yocVC0Qw2KVrOv5JoG9I5kXs0Kx8E29VCVPq+xF3xSJRns8T8TZpdu3bPmwtcApBGhVDqq2gAxX5+fnZ+MrvZtx3TsYCnUiVtTb5r6FKKCoWqhc2AW/SXO7ZR5RVQu9OuZrUgKgaulkajBTJC5i1uKfAOtAU+SrlGnmvTjf0Tfhmutx/91BqOCHicxkaOZSKdnr52K0xBvjvIO14KuPP+64Tbk5OW/AVbshbmTaLwak6S+NQ7ZG3RIrHYYgLqR50PpnqFwbAWfKiK+U4qAaSktQb5onI+NarMiZELEfLg7Tsa8hUKMPVa5ZXf0lH6u63xYIvI13pVkCPhpT1lQFqFIniSdF9AxgPvoMrLmxBPw6GDJtTH3NZ6FA+JM7FUimp5je/NiuXbsKCDJOGa6pbaSUBqgUVAwoFs71VPn95wHSXyH2TydmVKYXaOthHidAARHnysZqd4Q6/h7afpKKXFNblZQHqFpYeriDdaCyunbtOgaQ/lyMKBnPV6LU1UTmPioFoFXtEjrV1Z9z8Ahr97z8+uuve+n4Kd/L2wxAVcrPYprIQK+3J879yUwwm8KQaW8TqCp19HsVmAR3bIZbzuXuEtYtKGrqaRn6tzbtWZsDaLj6Vj4w5mLdy/5YnhO4No6RqD5E75uiH2KIKKcDi3TZhE/zOaz0Jejye1PFdRRuw4R2bRWgSuVEP3377bdde0tLD2Hi/bU0xljE/xC5KWDtUOF8WOXMWqj9RGEotJ7QuIXo6i+zttM+gCmWZZv01bVpgCoorf2ncFTG9XNxTf2EiXljaI2hjIw42ztXVfyY6JiMvFXQIVcxP2gxJFm5adOmCvT2epcN0tAwJQ/bC0AjxBXXFFzDhZV6Eu6pK2m0iwnrGyj6mLio2oNRJXVB95ZPWctY9QaGh1+lI76Cr3hDMqvgRYiWwgftDqAqrWVxLVbbcwLUXNZ8+BHi7hKAOgzO2k8aV1xV8msTagDiG86o/ASUuNs2o2PKV+DeYInGNb6+fcsKP/kkAMesd00rlT5tZd9uAaptABpOWSOqvLy8K2rAKcShytpOQwHrYYhIZZKUgBUwpwZgNYAEhIr4xhj8ijK/T73epYOtJT6TFR9LBZQp6WDX0r8xxx0CoBoCWWlQO6viydIy6Vi2g+FEJwPYM0lzHL8BGFnK5/wEGAJY+clxs3BagCixBmJxy0+ORWfmfSUM8X7HNfko2WrKsJbrwjUDrPgcwOhJef+lhuaNOuxoANURC7AiLS3CXe1wozQrS/CwGpl4AY6Glx4BOgcBzV6c5wBct4hZAZFsCmjDe/VYuWH4J+nVZ9S9pBcgkpOEsxXy28VvM+/YiEvoS1STzQRt7Ny7d68Ashq9UlYBbHfi20CqqKcdGqBGiiiAHTbMlvvFF3ZUAbujZ0+7p7w81x8Kdcdt0xOHd29A1gOO1h2E5sLRZKHcTBDo4dwl86u4D/PD/yULhtUu8y2rQpdzqQQ2eQAA7uF4D/d2A9ICHOeyonMRYjvIuHiNLEk5c+ZMWfqcvmFuJkDrx4CoBUInm6yYDIhsxEuyKrnfBte19ujRw8L6p9Zyj8d6DPf37Nljw7sVZFE0heORNgQIQ6wnGoIzhkgbAvxBzoONWWG5/mKbKUwKmBQwKWBSoGNT4P8Bn5zB8/zrEZ4AAAAASUVORK5CYII=" alt="SOLYA LIFE" width="42" height="42">光禾生活坊 <span class="caps">Guanghe</span></a>
   <nav aria-label="網站頁面">
-    <a href="#home">首頁</a><a href="#works">製作實績</a><a href="#process">製造流程</a><a href="#guide">避坑指南</a><a href="#spec">合作規格</a><a href="#tools">成本試算</a><a href="#contact">聯絡諮詢</a>
+    <a href="#home">首頁</a><a href="#works">製作實績</a><a href="#team">團體服</a><a href="#process">品牌流程</a><a href="#guide">避坑指南</a><a href="#spec">合作規格</a><a href="#tools">成本試算</a><a href="#contact">聯絡諮詢</a>
   </nav>
 </div></header>
 
@@ -203,13 +215,18 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;paddin
     <div class="mega two">Make<br>it real.</div>
     <h1 style="margin-top:clamp(40px,7vw,90px)">想做自己的品牌產品，不用自己撞牆。</h1>
     <p class="lead">從一個想法到貨到手上，中間有規格、報價、打樣、量產、品檢好幾關。這個網站把每一關講清楚，也告訴你哪裡最容易多花錢、多等時間。想找人一起看，可以直接找我諮詢。</p>
+    <h2>你想做的是哪一種？</h2>
+    <div class="paths">
+      <a class="path" href="#process"><span class="caps">Path A</span><strong>我要做品牌 →</strong><em>客製開版，每色 50–80 件</em><span>從打樣到量產，約 8–12 週</span></a>
+      <a class="path" href="#team"><span class="caps">Path B</span><strong>我要做團體服 →</strong><em>現成版印製，20 件起</em><span>確認設計稿後約 10–14 個工作天</span></a>
+    </div>
     <div class="cta"><a class="btn" href="#contact">預約諮詢</a><a class="btn line" href="#works">看做過的產品</a></div>
   </div>
   <div class="stats">
     <div class="stat"><b>100+</b><span>累積服務的品牌與團體</span></div>
-    <div class="stat"><b>20 件</b><span>最低製作量</span></div>
-    <div class="stat"><b>2–4 週</b><span>打樣週期</span></div>
-    <div class="stat"><b>30–45 天</b><span>樣品確認後的大貨交期</span></div>
+    <div class="stat"><b>20 件起</b><span>現成版印製。客製開版每色 50–80 件</span></div>
+    <div class="stat"><b>2–4 週</b><span>客製開版的打樣週期</span></div>
+    <div class="stat"><b>10–14 天</b><span>團體服交期（工作天，確認設計稿後）</span></div>
   </div>
   <div class="body">
     <div class="tiles">
@@ -254,13 +271,46 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;paddin
   </div>
 </section>
 
+<!-- TEAM -->
+<section class="view" data-view="team" hidden>
+  <div class="poster p-ice sub">
+    <div class="top-row caps"><span>Team wear</span><span>20 pcs / 10–14 working days</span></div>
+    <div class="mega two">Team<br>wear</div>
+    <h1 style="margin-top:clamp(34px,6vw,76px)">做團體服：20 件起，約 10–14 個工作天</h1>
+    <p class="lead">社團、公司、店家、活動要穿的衣服，從現成的衣服款式裡挑，再印上你的圖案。不用開版、不用打樣，流程短很多。</p>
+    <div class="cta"><button class="btn" id="team-ask" type="button">問團體服報價</button></div>
+  </div>
+  <div class="stats three">
+    <div class="stat"><b>20 件起</b><span>最低數量</span></div>
+    <div class="stat"><b>10–14 天</b><span>工作天，確認設計稿後交貨</span></div>
+    <div class="stat"><b>不用打樣</b><span>直接挑現成款式印製</span></div>
+  </div>
+  <div class="body">
+    <ol class="steps">
+      <li><span class="no">01</span><div><h3>告訴我三件事</h3><p>要做幾件、想要哪種衣服、圖案長什麼樣。有希望拿到的日期也一起說。</p></div><span class="time">你準備</span></li>
+      <li><span class="no">02</span><div><h3>收到報價</h3><p>依數量、衣服款式和印製方式報價，費用會一項一項列清楚。</p></div><span class="time">我回覆</span></li>
+      <li><span class="no">03</span><div><h3>確認款式與設計稿</h3><p>選好衣服顏色和各尺寸數量，確認圖案的位置和大小。這一步確認後才開始算交期。</p></div><span class="time">一起確認</span></li>
+      <li><span class="no">04</span><div><h3>印製與出貨</h3><p>印製、檢查、包裝後寄到你指定的地址。</p></div><span class="time">10–14 個工作天</span></li>
+    </ol>
+    <div class="grid2">
+      <div class="card"><span class="caps">Styles</span><h2>可以做的款式</h2>
+        <ul class="chips"><li>短袖 T 恤</li><li>POLO 衫</li><li>大學 T</li><li>排汗衫</li><li>背心</li><li>外套</li><li>帽子</li><li>圍裙</li></ul></div>
+      <div class="card"><span class="caps">Print</span><h2>印製方式</h2>
+        <ul class="chips"><li>網版印刷</li><li>熱轉印</li><li>膠印</li><li>電腦刺繡</li></ul>
+        <p>不知道哪種適合，把圖案給我看，我會建議。</p></div>
+    </div>
+    <p class="note">趕時間請先說希望到貨的日期，我會告訴你來不來得及。想要特殊版型、指定布料或染色，就屬於客製開版，請看<a href="#process">品牌流程</a>。</p>
+    <a class="next" href="#contact"><span class="caps">Next</span><strong>聯絡諮詢 →</strong></a>
+  </div>
+</section>
+
 <!-- PROCESS -->
 <section class="view" data-view="process" hidden>
   <div class="poster p-ice sub">
     <div class="top-row caps"><span>02 / Process</span><span>8–12 weeks</span></div>
     <div class="mega two">Step<br>by step</div>
-    <h1 style="margin-top:clamp(34px,6vw,76px)">從第一次洽談到出貨，約 8–12 週</h1>
-    <p class="lead">實際時間會依款式複雜度、布料供應和修改次數調整。每一步都要有產出，才往下一步走。</p>
+    <h1 style="margin-top:clamp(34px,6vw,76px)">做品牌：從第一次洽談到出貨，約 8–12 週</h1>
+    <p class="lead">這是做品牌、客製開版的流程。只是要做社團、公司或活動的團體服，不用走這麼長，請看<a href="#team">團體服流程</a>。</p>
   </div>
   <div class="body">
     <ol class="steps">
@@ -306,11 +356,11 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;paddin
   </div>
   <div class="body">
     <div class="tablebox"><table>
-      <tr><th>最低製作量</th><td>20 件起做。客製開版、指定染色的款式，每色約 50–80 件，同色可混尺寸。</td></tr>
+      <tr><th>最低製作量</th><td>現成版印製 20 件起；客製開版、指定染色每色 50–80 件，同色可混尺寸。</td></tr>
       <tr><th>打樣費用</th><td>單純打樣每款 NT$1,500–2,500；確定下大貨者不另收。</td></tr>
       <tr><th>打樣週期</th><td>約 2–4 週，每款含 1 次修改。</td></tr>
       <tr><th>報價方式</th><td>依款式個別報價，提供參考圖或樣衣後 3 個工作天內回覆。</td></tr>
-      <tr><th>大貨交期</th><td>樣品確認後約 30–45 天。</td></tr>
+      <tr><th>交期</th><td>現成版印製：確認設計稿後約 10–14 個工作天。客製開版：樣品確認後約 30–45 天。</td></tr>
       <tr><th>付款條件</th><td>下單付 50% 訂金，出貨前結清尾款。</td></tr>
       <tr><th>版型</th><td>客製款版型歸廠方，打樣費含生產使用權；可另外報價買斷。</td></tr>
       <tr><th>保密協議</th><td>歡迎簽署，建議採雙向版本。</td></tr>
@@ -320,13 +370,13 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;paddin
     <div class="services">
       <div class="card"><h3>製造諮詢<span class="tag">主要服務</span></h3><p>適合還在想、還沒找廠，或做到一半卡住的人。</p><ul class="plain"><li>釐清款式、布料與首批數量</li><li>估算成本與合理售價</li><li>列出你這個品項要注意的事</li></ul></div>
       <div class="card"><h3>規格整理與報價</h3><p>諮詢後想繼續往下走，可以再談。</p><ul class="plain"><li>整理成工廠看得懂的規格</li><li>逐款試算報價</li><li>打樣階段的修改溝通</li></ul></div>
-      <div class="card"><h3>實際製作</h3><p>確定要做，最低 20 件就能開始。</p><ul class="plain"><li>開版打樣到大貨生產</li><li>印刷、刺繡與輔料</li><li>品檢、包裝與出貨</li></ul></div>
+      <div class="card"><h3>實際製作</h3><p>現成版印製 20 件起，客製開版每色 50–80 件。</p><ul class="plain"><li>開版打樣到大貨生產</li><li>印刷、刺繡與輔料</li><li>品檢、包裝與出貨</li></ul></div>
     </div>
     <h2>大家最常先問的四件事</h2>
     <div>
-      <details><summary>數量很少，也可以做嗎？</summary><p>可以，最低 20 件就能做。如果是客製開版、指定染色的款式，門檻會以顏色計算，每色約 50–80 件。諮詢時會一起看怎麼調整最划算。</p></details>
+      <details><summary>數量很少，也可以做嗎？</summary><p>可以。用現成的衣服款式印製，20 件就能做。如果是客製開版、指定染色，門檻以顏色計算，每色 50–80 件。不確定自己屬於哪一種，諮詢時會幫你判斷。</p></details>
       <details><summary>我只有想法，沒有設計稿，可以開始嗎？</summary><p>可以。帶 1–2 款參考圖或樣衣來就好，第一步就是把想法整理成規格。</p></details>
-      <details><summary>從開始到拿到貨，大概要多久？</summary><p>從洽談到出貨約 8–12 週，打樣來回的次數影響最大。有固定上市日的話，越早開始越安全。</p></details>
+      <details><summary>從開始到拿到貨，大概要多久？</summary><p>團體服用現成版印製，確認設計稿後約 10–14 個工作天。做品牌要客製開版，從洽談到出貨約 8–12 週，打樣來回的次數影響最大。</p></details>
       <details><summary>要準備多少預算？</summary><p>要看款式和數量。除了貨款，還要算進打樣、印繡開版、吊牌包材和運費。成本試算頁可以先抓範圍，諮詢時再一起細算。</p></details>
     </div>
     <a class="next" href="#tools"><span class="caps">Next / 05</span><strong>成本試算 →</strong></a>
@@ -469,6 +519,13 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;paddin
       location.hash='contact';
     });
     li.textContent=''; li.className='has-btn'; li.appendChild(b);
+  });
+
+  $('team-ask').addEventListener('click',function(){
+    $('m-type').value='團體服';
+    $('m-ask').value='想問團體服報價。數量：　件；款式：　；圖案：　；希望到貨日：　。';
+    msg();
+    location.hash='contact';
   });
 
   var fmt=function(n){return 'NT$ '+Math.round(n).toLocaleString('zh-TW')};
