@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>服裝成本試算：每件衣服實際成本怎麼算｜光禾生活坊</title>
+<meta name="description" content="輸入報價單價、數量、開版費、打樣費、包材和運費，算出每件衣服的實際成本與建議售價，並附下單前的八項自我檢查。">
+<link rel="canonical" href="https://a4895349-cmyk.github.io/guanghe-brand-guide/cost/">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="apple-touch-icon" href="../favicon.png">
+<meta property="og:title" content="服裝成本試算：每件衣服實際成本怎麼算｜光禾生活坊">
+<meta property="og:description" content="輸入報價單價、數量、開版費、打樣費、包材和運費，算出每件衣服的實際成本與建議售價，並附下單前的八項自我檢查。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://a4895349-cmyk.github.io/guanghe-brand-guide/cost/">
+<meta property="og:site_name" content="光禾生活坊">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:image" content="https://a4895349-cmyk.github.io/guanghe-brand-guide/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首頁", "item": "https://a4895349-cmyk.github.io/guanghe-brand-guide/"}, {"@type": "ListItem", "position": 2, "name": "成本試算", "item": "https://a4895349-cmyk.github.io/guanghe-brand-guide/cost/"}]}]</script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,600;125,900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body data-root="../">
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><img class="logo" src="../favicon.png" alt="SOLYA LIFE" width="42" height="42">光禾生活坊 <span class="caps">Guanghe</span></a>
+  <nav aria-label="網站頁面">
+    <a href="../">首頁</a><a href="../works/">製作實績</a><a href="../team/">團體服</a><a href="../brand/">品牌流程</a><a href="../guide/">避坑指南</a><a href="../spec/">合作規格</a><a href="../cost/" aria-current="page">成本試算</a><a href="../contact/">聯絡諮詢</a>
+  </nav>
+</div></header>
+<main class="wrap">
+<section class="view" data-view="tools">
+  <div class="poster p-slate sub">
+    <div class="top-row caps"><span>05 / Tools</span><span>Know your numbers</span></div>
+    <div class="mega two">Count<br>first</div>
+    <h1 style="margin-top:clamp(34px,6vw,76px)">下單之前，先算一次、檢查一次</h1>
+  </div>
+  <div class="body">
+    <div class="grid2">
+      <div class="card" style="gap:16px">
+        <h2>每件實際成本試算</h2>
+        <p class="note">欄位裡是範例數字，請換成你拿到的報價。</p>
+        <div class="fields">
+          <div class="field"><label for="c-unit">報價單價（元）</label><input id="c-unit" type="number" min="0" value="280" inputmode="decimal"></div>
+          <div class="field"><label for="c-qty">首批數量（件）</label><input id="c-qty" type="number" min="1" value="100" inputmode="numeric"></div>
+          <div class="field"><label for="c-tool">印繡開版費（元）</label><input id="c-tool" type="number" min="0" value="2000" inputmode="decimal"></div>
+          <div class="field"><label for="c-sample">打樣費合計（元）</label><input id="c-sample" type="number" min="0" value="2000" inputmode="decimal"></div>
+          <div class="field"><label for="c-pack">每件吊牌與包材（元）</label><input id="c-pack" type="number" min="0" value="15" inputmode="decimal"></div>
+          <div class="field"><label for="c-ship">運費與雜支（元）</label><input id="c-ship" type="number" min="0" value="800" inputmode="decimal"></div>
+          <div class="field full"><label for="c-mult">售價倍率（售價 ÷ 成本）</label><input id="c-mult" type="number" min="1" step="0.1" value="3" inputmode="decimal"></div>
+        </div>
+        <div class="result" aria-live="polite">
+          <div class="row"><span>首批總投入</span><span id="r-total"></span></div>
+          <div class="row"><span>每件實際成本</span><span class="big" id="r-per"></span></div>
+          <div class="row"><span>比報價單價高出</span><span id="r-gap"></span></div>
+          <div class="row"><span>對應的建議售價</span><span id="r-price"></span></div>
+        </div>
+        <p class="note">倍率沒有標準答案，要看通路抽成和行銷費用。這是用來抓方向的估算。</p>
+      </div>
+      <div class="card" style="gap:16px">
+        <h2>下單前自我檢查</h2>
+        <ul class="checks" id="checks">
+          <li><label><input type="checkbox" id="k1"><span>我能用一句話說出產品賣給誰、解決什麼問題</span></label></li>
+          <li><label><input type="checkbox" id="k2"><span>我有參考圖或樣衣可以給工廠看</span></label></li>
+          <li><label><input type="checkbox" id="k3"><span>我知道目標售價和可接受的成本上限</span></label></li>
+          <li><label><input type="checkbox" id="k4"><span>首批數量就算賣得慢，資金也撐得住</span></label></li>
+          <li><label><input type="checkbox" id="k5"><span>我預留了打樣修改的時間和費用</span></label></li>
+          <li><label><input type="checkbox" id="k6"><span>我決定好顏色數量，知道每色要做幾件</span></label></li>
+          <li><label><input type="checkbox" id="k7"><span>洗標、吊牌和包裝已經有安排</span></label></li>
+          <li><label><input type="checkbox" id="k8"><span>我問過版型歸誰、修改怎麼算</span></label></li>
+        </ul>
+        <div class="result" aria-live="polite">
+          <div class="row"><span>準備度</span><span class="big" id="k-score"></span></div>
+          <p id="k-msg" class="note"></p>
+        </div>
+      </div>
+    </div>
+    <a class="next" href="../contact/"><span class="caps">Next / 06</span><strong>聯絡諮詢 →</strong></a>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><img class="lockup" src="../lockup.png" alt="SOLYA LIFE" width="132" height="103"><span>光禾生活坊｜時程與費用為一般情況，實際依款式、數量與布料而定。</span></div></footer>
+<script src="../app.js"></script>
+</body>
+</html>
