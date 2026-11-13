@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://a4895349-cmyk.github.io/guanghe-brand-guide/sitemap.xml
